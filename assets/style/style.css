@@ -44,7 +44,7 @@ a {
 @media (max-width: 1024px) {
   .form__button {
     font-size: 1.5em;
-    letter-spacing: 19px;
+    letter-spacing: 15px;
     margin-top: 136px;
     margin-right: -133px;
   }
