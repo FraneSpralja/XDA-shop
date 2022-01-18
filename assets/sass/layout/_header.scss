@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    height: 89vh;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    @include breakpoint('ms'){
+    height: 50vw;
+    }
+}
+
+.header__hero{
+    height: 89vh;
+    width: 100%;
+    background-image: url("../assets/img/imagen1.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    @include breakpoint('ms'){
+        height: 50vw;
+    }
+}

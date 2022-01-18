@@ -1,0 +1,30 @@
+.button {
+    padding: .5em 1em;
+    border: 1px solid $smoky-black;
+    font-family: $raleway;
+    font-weight: bold;
+    background-color: $white;
+}
+
+.form__button {
+    background-color: #fff;
+    transform: rotate(90deg);
+    width: auto;
+    font-size: 1em;
+    letter-spacing: 6px;
+    float: right;
+    margin-top: 71px;
+    margin-right: -68px;
+    cursor: pointer;
+    @include breakpoint ('ms'){
+        font-size: 1.5em;
+        letter-spacing: 15px;
+        margin-top: 136px;
+        margin-right: -133px;
+    }
+    @include breakpoint('sm'){
+            letter-spacing: 7px;
+            margin-top: 75px;
+            margin-right: -73px;
+    }
+}

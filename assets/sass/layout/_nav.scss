@@ -1,0 +1,102 @@
+.nav {
+    display: flex;
+    background-color: $isabelline;
+    flex-flow: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+}
+
+.nav-brand {
+    display: inline-grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $smoky-black;
+    color: $white;
+    font-weight: bold;
+    margin: 0;
+    align-content: center;
+    height: 4.2em;
+    width: 4.2em;
+    font-size: $x-large;
+    @include breakpoint('ms') {
+        height: 4.2em;
+        width: 4.2em;
+        font-size: $x-large;
+    }
+    @include breakpoint('sm'){
+        height: 3.3em;
+        width: 3.3em;
+        font-size: $medium;
+    }
+}
+
+.brand__block {
+    text-align: center;
+}
+
+.nav__list {
+    margin-left: auto;
+    @include breakpoint('sm'){
+        position: fixed;
+        background-color: $smoky-black;
+        opacity: .8;
+        height: 100%;
+        right: 0;
+        top: 0;
+        list-style-type: none;
+        padding: 2em 1em;
+    }
+}
+
+.list__item {
+    float: left;
+    padding: 1em 1.5em;
+    list-style-type: none;
+    font-family: $raleway;
+    font-weight: bold;
+    @include breakpoint('sm') {
+        float: none;
+        padding: 1em 0;
+    }
+}
+
+.item-link {
+    @include breakpoint('sm'){
+        color: $white;
+        opacity: 1;
+    }
+}
+
+.navigation {
+    @include breakpoint('sm'){
+        left: 110%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.nav__menu {
+    display: none;
+    @include breakpoint('sm'){
+        display: block;
+        margin-left: auto;
+        font-size: $large;
+    }
+}
+
+.moveBtn {
+    margin-right: 6em;
+}
+
+.close__out {
+    display: none;
+}
+
+#nav__Close {
+    position: absolute;
+    left: 60%;
+    font-size: $x-large;
+    color: $smoky-black;
+}

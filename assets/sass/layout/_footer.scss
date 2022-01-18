@@ -1,0 +1,49 @@
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: $white;
+    background-color: $smoky-black;
+    height: 25vh;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint('ms'){
+        height: 32vh;
+        padding-left: 2em;
+    }
+    @include breakpoint('sm') {
+        height: 28vh;
+    }
+    @include breakpoint('xs') {
+        height: 22vh;
+    }
+}
+
+.footer__title {
+    font-size: $xx-large;
+    margin-top: 5%;
+    @include breakpoint('ms'){
+        font-size: 70px;
+    }
+    @include breakpoint('sm'){
+        font-size: $xx-large;
+    }
+}
+
+.form {
+    display: flex;
+    width: 60%;
+    flex-flow: column;
+    row-gap: 1em;
+    margin-right: auto;
+    @include breakpoint('ms'){
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.form__button {
+    background-color: $white;
+}

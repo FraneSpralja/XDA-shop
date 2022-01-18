@@ -1,0 +1,7 @@
+.main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    @include breakpoint('ms') {
+        display: block;
+    }
+}

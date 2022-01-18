@@ -1,0 +1,40 @@
+//------COLOR SCHEME
+
+//First Scheme Color
+$white: #fff;
+$isabelline: #ececec;
+$light-gray: #d1d1d1;
+
+//Second Scheme Color
+$smoky-black: #0c0910;
+$granite-gray: #646266;
+$quick-silver: #a6a5a8;
+
+//------TYPOGRAPHY
+
+//Font Family
+$old-standard: 'Old Standard TT', serif;
+$raleway: 'Raleway', sans-serif;
+
+//Font size
+$xxx-large: 50px;
+$xx-large: 30px;
+$x-large: 20px;
+$large: 18px;
+$medium: 16px;
+$small: 14px;
+$x-small: 12px;
+
+
+//BREAKPOINT
+@mixin breakpoint($point) {
+    @if $point == ms {
+        @media (max-width: 1024px) { @content ; }
+    }
+    @else if $point == sm {
+        @media (max-width: 480px)  { @content ; }
+    }
+    @else if $point == xs {
+        @media (max-width: 420px) { @content ; }
+    }
+}
